@@ -1,11 +1,39 @@
-<div align="center">
+# Fintelly: AI Loan Advisor
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+A modern, conversational AI loan advisory system built with React and Gemini API.
 
-  <h1>Built with AI Studio</h2>
+## 🚀 Getting Started
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+### Prerequisites
+- Node.js (v16 or higher)
+- A Google Cloud Project with Gemini API enabled
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+### Installation
 
-</div>
+1. **Install Dependencies**
+   ```bash
+   npm install
+   ```
+
+2. **Configure Environment**
+   - Rename `.env.example` to `.env`
+   - Paste your Gemini API key into `.env`:
+     ```
+     API_KEY=AIzaSy...
+     ```
+
+3. **Run Locally**
+   ```bash
+   npm run dev
+   ```
+   The app will open at `http://localhost:3000`
+
+## 🏗️ Project Structure
+- `components/`: UI components (Chat, Cards, Logo)
+- `services/`: Logic layer (Loan Engine, Gemini Integration)
+- `pages/`: Static pages (Privacy, Terms)
+- `types.ts`: TypeScript definitions
+- `constants.ts`: Bank schemes and conversation data
+
+## 🔐 Security Note
+This is a client-side prototype. In a real production environment, the API Key should be stored on a backend server, and the API calls should be proxied to prevent exposing credentials.
